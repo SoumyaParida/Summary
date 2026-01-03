@@ -401,41 +401,7 @@ function billing() {
             </div>
         </div>
 
-        <div className="p-6 bg-white shadow-md rounded-lg hover:shadow-lg transition-transform transform hover:scale-105">
-           <ResponsiveContainer width="100%" aspect={1}>
-                <PieChart>
-                  <Pie
-                    data={pieData}
-                    dataKey="value"
-                    nameKey="name"
-                    cx="50%"
-                    cy="50%"
-                    outerRadius="100%"
-                    fill="#8884d8"
-                  >
-                    {pieData.map((entry, index) => (
-                      <Cell
-                        key={`cell-${index}`}
-                        fill={COLORS[index % COLORS.length]}
-                      />
-                    ))}
-                  </Pie>
-                  <Tooltip />
-                   {/* Legend */}
-                    <Legend 
-                      layout="horizontal"    // Layout of the legend (horizontal or vertical)
-                      verticalAlign="bottom" // Aligns the legend vertically
-                      align="center"         // Aligns the legend horizontally
-                      wrapperStyle={{
-                        paddingTop: "10px",  // Adds space between the chart and legend
-                        fontSize: "14px",    // Adjusts the legend font size
-                        color: "#555",       // Adjusts the legend text color
-                      }}
-                    />
-
-                </PieChart>
-              </ResponsiveContainer>
-            </div>
+        
           </div>
 
           <p></p>

@@ -25,7 +25,9 @@ import { eq, desc, and } from 'drizzle-orm';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-function formatMessageToReactElements(text: string): (string | JSX.Element)[] {
+import { Suspense } from "react";
+
+function formatMessageToReactElements(text: string): React.ReactNode[] {
   const parts = text
     .split(/(\*\*.*?\*\*|\*.*?\*|\n)/g) // Split by bold (**text**), italic (*text*), and newline
     .filter(Boolean); // Remove empty strings
@@ -248,7 +250,8 @@ const Dashboard = () => {
   };
 
   return (
-    <div className="max-w mx-auto px-4 sm:px-6 lg:px-8 pb-10 bg-white">                
+    <div className="max-w mx-auto px-4 sm:px-6 lg:px-8 pb-10 bg-white">
+    <Suspense fallback={null}>               
       <main className="mt-4 flex min-h-screen flex-col sm:p-8 bg-white">
         <section className="flex flex-col items-center py-8 px-4">
           <h1 className="text-7xl font-bold text-center text-gray-800 dark:text-gray-200">
@@ -305,7 +308,8 @@ const Dashboard = () => {
           </p>
         </div>
         
-      </main>  
+      </main>
+      </Suspense>
     </div>
   );
 };
