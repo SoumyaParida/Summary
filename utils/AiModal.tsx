@@ -1,6 +1,6 @@
 import { YoutubeTranscript } from "youtube-transcript";
 
-const apiKey = "AIzaSyDQ7irYD3GBDZqvAUXzRp426NrfCrXDyqY";
+const apiKey = process.env.GEMINIAPIKEY;
 
 // Extract video ID from URL
 function getVideoId(url: string): string {
