@@ -1,0 +1,109 @@
+/* Add this to your CSS file or a <style> block */
+.summary-container {
+  background-color: #f9fbfc; /* Softer light gray background */
+  border-radius: 12px; /* Slightly more rounded corners */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
+  padding: 24px; /* Add comfortable padding */
+  margin: 30px auto; /* Center align with larger margin */
+  max-width: 75%; /* Slightly narrower width for focus */
+  font-family: monospace; /* Clean font */
+  line-height: 1.8; /* Improve readability further */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Add smooth effects */
+}
+
+.summary-container:hover {
+  transform: scale(1.02); /* Slight zoom effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.summary-title {
+  color: #1a252f; /* Richer dark color for title */
+  font-size: 26px; /* Increase title size */
+  font-weight: bold; /* Add boldness for emphasis */
+  margin-bottom: 16px; /* Add more spacing */
+  text-align: center; /* Center the title */
+  text-transform: uppercase; /* Add uppercase styling */
+  letter-spacing: 1.2px; /* Slight letter spacing */
+}
+
+.summary-content {
+  color: #4a4a4a; /* Softer neutral text color */
+  font-size: 17px; /* Slightly larger text */
+  white-space: pre-wrap; /* Handle line breaks */
+  text-align: justify; /* Improve text alignment for longer content */
+}
+
+.summary-content b {
+  color: black; /* Deep red for bold text */
+  font-weight: bold; /* Add boldness */
+}
+
+.summary-content i {
+  color: #7f8c8d; /* Vibrant blue for italic text */
+  font-style: italic; /* Italicize */
+  font-weight: bold; /* Add boldness */
+}
+
+.summary-content span {
+  color: #7f8c8d; /* Softer gray for regular text */
+}
+
+.button-content {
+  color: white; /* Softer neutral text color */
+  font-size: 17px; /* Slightly larger text */
+  white-space: pre-wrap; /* Handle line breaks */
+  text-align: justify; /* Improve text alignment for longer content */
+}
+
+/* Global body styling */
+body {
+  font-family: monospace;
+  background-color: #eef2f5; /* Light background for overall page */
+  margin: 0;
+  padding: 0;
+  line-height: 1.8;
+  color: #333;
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #b0b0b0; /* Softer gray for the scrollbar thumb */
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #8e8e8e; /* Darker gray on hover */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f0f4f8; /* Match the container's background */
+}
+
+.video-carousel-container {
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+  padding-bottom: 1rem;
+}
+
+.video-carousel {
+  display: flex;
+  gap: 1rem; /* Space between items */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for sliding */
+}
+
+.video-thumbnail {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.video-thumbnail:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}

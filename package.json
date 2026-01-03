@@ -1,0 +1,48 @@
+{
+  "name": "my-clerk-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@clerk/nextjs": "^6.36.5",
+    "@mistralai/mistralai": "",
+    "@neondatabase/serverless": "^0.9.3",
+    "@radix-ui/react-icons": "^1.3.0",
+    "@radix-ui/react-slot": "^1.1.0",
+    "@radix-ui/react-switch": "^1.0.3",
+    "axios": "^1.7.2",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "drizzle-orm": "^0.31.2",
+    "lucide-react": "",
+    "moment": "^2.30.1",
+    "next": "",
+    "node-mailjet": "",
+    "nvm": "^0.0.4",
+    "razorpay": "^2.9.4",
+    "react": "",
+    "react-dom": "",
+    "recharts": "",
+    "slick-carousel": "",
+    "swiper": "^11.1.14",
+    "tailwind-merge": "^2.3.0",
+    "tailwindcss-animate": "^1.0.7",
+    "youtube-transcript": "^1.2.1",
+    "youtubei.js": "^10.3.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.1",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
